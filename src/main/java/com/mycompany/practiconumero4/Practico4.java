@@ -109,10 +109,14 @@ public class Practico4 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBconvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBconvertirActionPerformed
+        try{
         int num=Integer.parseInt(jTgrados.getText());
         int num2=0;
         num2=num * 9/5 + 32;
-        JOptionPane.showMessageDialog(this, "el resultado de la convercion es: "+num2+" °F");
+        JOptionPane.showMessageDialog(this, "el resultado de la convercion es: "+num2+" °F");}
+        catch(NumberFormatException e){
+             JOptionPane.showMessageDialog(this, "--ingrese un numero porfavor-- letra no valida-- ");
+        }
         
         
         
